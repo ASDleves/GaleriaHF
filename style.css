@@ -1,0 +1,49 @@
+* Alap stílusok az oldal középre igazításához */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Képgaléria stílusok */
+#gallery {
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#kepek { /* Volt: imagesContainer */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kép-konténer { /* Volt: .img-container */
+    cursor: pointer;
+    margin-bottom: 20px; /* Távolság a képek között */
+    flex: 0 0 calc(33.33% - 20px); /* Képek egy sorban, 3 oszlopon */
+}
+
+.kép-konténer img { /* Volt: .img-container img */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.kép-konténer img:hover { /* Volt: .img-container img:hover */
+    transform: scale(1.1);
+}
+
+#galeria-elonezet { /* Volt: gallery-preview */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
